@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name='batch_pipeline',
+    name='helper_class',
     version='1.0',
     install_requires=['google-cloud-storage','google-cloud-bigquery'],
-    packages=['batch_pipeline','helper_class'],
+    packages=['helper_class','batch_pipeline'],
     author='gcpthummala',
     author_email='gcpthummala95@gmail.com')
