@@ -15,7 +15,7 @@ steps:
 #  ]
 #  waitFor: ['Build Docker Image']
 
-
+# req variables
 substitutions:
   _BUCKET_NAME: 'gcp-practice-95'
   _PROJECT_ID: 'aerobic-amphora-409013'
