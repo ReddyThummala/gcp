@@ -9,7 +9,9 @@ ENV PYTHONPATH="${WORKDIR}"
 
 # copy files
 COPY setup.py .
-COPY batch_pipeline/ ./batch_pipeline
+# COPY batch_pipeline/ ./batch_pipeline
+COPY batch_pipeline/helper_class/ ./batch_pipeline/helper_class
+COPY batch_pipeline/pipeline.py ./batch_pipeline
 
 RUN ls ${WORKDIR}/batch_pipeline
 RUN ls ${WORKDIR}/batch_pipeline/helper_class

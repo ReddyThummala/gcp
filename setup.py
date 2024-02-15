@@ -1,9 +1,12 @@
 import setuptools
 
 setuptools.setup(
-    name='helper_class',
+    name='batch_pipeline',
     version='1.0',
     install_requires=['google-cloud-storage','google-cloud-bigquery'],
-    packages=['helper_class','batch_pipeline'],
+    # packages=setuptools.find_packages(where='batch_pipeline'),
+    packages=setuptools.find_packages("batch_pipeline","helper_class"),
+    package_dir = {"": "batch_pipeline"
+                  },
     author='gcpthummala',
     author_email='gcpthummala95@gmail.com')
