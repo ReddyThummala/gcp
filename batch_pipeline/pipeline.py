@@ -2,9 +2,9 @@ import logging
 import apache_beam as beam
 
 from apache_beam.options.pipeline_options import PipelineOptions
-from batch_pipeline.helper_class.MyOptions import MyOptions
-from batch_pipeline.helper_class.Validation import validateRows
-from batch_pipeline.helper_class.WriteToBQ import writeToBQ
+from helper_class.MyOptions import MyOptions
+from helper_class.Validation import validateRows
+from helper_class.WriteToBQ import writeToBQ
 
 def gcs_to_bq_pipeline():
 
